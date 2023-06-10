@@ -4,12 +4,13 @@ import { useContext } from 'react';
 import CartContext from '../../store/cart-context';
 
 const MealForm = (props) => {
+  
     const cartContext = useContext(CartContext);
 
     const addMealItem = (e) => {
         e.preventDefault();
         const count= document.getElementById( "amount" + props.id).value
-        cartContext.addItem({...props.items, quantity:count})
+        cartContext.addItem({...props.items}, Number(count))
     }
     return (
         <form className={classes.form} >

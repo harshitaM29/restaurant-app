@@ -4,6 +4,7 @@ import { Fragment, useContext} from 'react';
 import CartContext from '../../store/cart-context';
 
 
+
 const HeaderCart = props => {
     const cart = useContext(CartContext);
     let quantity = 0;
