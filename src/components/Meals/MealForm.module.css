@@ -2,21 +2,16 @@
     text-align: right;
 }
 
-.form label {
-    font-weight: bold;
-    padding-right: 10px;
-}
-
-.form input {
-    width: 15%;
-}
 .form button {
-    border:1px solid #814304;
-    background-color: #814304;
-    border-radius: 15px;
+    font: inherit;
+  cursor: pointer;
+   background-color: #814304;
+   border:1px solid #814304;
+    border-radius: 20px;
     color: white;
-    width: 35%;
-    padding: 0.25 rem 1rem;
+    padding: 0.25rem 2rem;
+    font-weight: bold;
+    
 }
 
 .form button:hover,
