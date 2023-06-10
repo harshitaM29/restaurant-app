@@ -1,22 +1,14 @@
 import classes from './HeaderCart.module.css';
 import CartIcon from '../Cart/CartIcon';
-import { Fragment, useState } from 'react';
-import Cart from '../Cart/Cart';
+import { Fragment} from 'react';
+
 
 const HeaderCart = props => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const openCart = () =>{
-        setIsOpen(true);
-    }
-
-    const closeCart = () => {
-        setIsOpen(false);
-    }
+    console.log(props)
+    
     return (
         <Fragment>
-        {isOpen && <Cart onClose={closeCart}/>}
-       <button className={classes.button} onClick={openCart}>
+       <button className={classes.button} onClick={props.onClick}>
         <span  className={classes.icon}>
             <CartIcon />
         </span>
