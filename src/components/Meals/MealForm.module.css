@@ -1,0 +1,27 @@
+.form {
+    text-align: right;
+}
+
+.form label {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.form input {
+    width: 15%;
+}
+.form button {
+    border:1px solid #814304;
+    background-color: #814304;
+    border-radius: 15px;
+    color: white;
+    width: 35%;
+    padding: 0.25 rem 1rem;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: #cd6d0e;
+  border-color: #cd6d0e;
+  ;
+}
