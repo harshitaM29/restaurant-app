@@ -1,10 +1,16 @@
 import classes from './HeaderCart.module.css';
+import CartIcon from '../Cart/CartIcon';
 
 const HeaderCart = props => {
     return (
-        <div className={classes.button}> 
-            <button>Your Cart</button>
-        </div>
+       <button className={classes.button}>
+        <span  className={classes.icon}>
+            <CartIcon />
+        </span>
+        <span>Your Cart</span>
+        <span className={classes.badge}>0</span>
+
+       </button>
     )
 }
 
