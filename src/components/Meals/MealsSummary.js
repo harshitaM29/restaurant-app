@@ -1,4 +1,5 @@
 import classes from './MealsSummary.module.css';
+
 const MealsSummary = props => {
     return(
     <section className={classes.summary}>

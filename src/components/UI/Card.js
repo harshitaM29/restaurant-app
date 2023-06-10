@@ -1,6 +1,6 @@
-import classes from './Cart.module.css'
-const Cart = props => {
+import classes from './Card.module.css'
+const Card = props => {
     return <div className={` ${classes.cart} ${props.className} `}>{props.children}</div>
 }
 
-export default Cart;
+export default Card;
