@@ -1,11 +1,15 @@
 import classes from './HeaderCart.module.css';
 import CartIcon from '../Cart/CartIcon';
-import { Fragment} from 'react';
+import { Fragment, useContext} from 'react';
+import CartContext from '../../store/cart-context';
 
 
 const HeaderCart = props => {
-    console.log(props)
-    
+    const cart = useContext(CartContext);
+    let quantity = 0;
+    cart.items.forEach(item => {
+        quantity = quantity + Number(item.quantity);
+    });
     return (
         <Fragment>
        <button className={classes.button} onClick={props.onClick}>
@@ -13,7 +17,7 @@ const HeaderCart = props => {
             <CartIcon />
         </span>
         <span>Your Cart</span>
-        <span className={classes.badge}>0</span>
+        <span className={classes.badge}>{quantity}</span>
 
        </button>
        </Fragment>

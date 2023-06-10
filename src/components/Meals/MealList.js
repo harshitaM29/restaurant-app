@@ -6,19 +6,22 @@ const DUMMY_MEALS = [
         id:'m1',
         mealName:'Sushi',
         mealDescription:'Finest fish and veggies',
-        mealPrice:22.99
+        mealPrice:22.99,
+        quantity: 0
     },
     {
         id:'m2',
       mealName:'Schnitzel',
       mealDescription:'A german speciality',
-      mealPrice:16.50
+      mealPrice:16.50,
+      quantity: 0
   },
   {
     id:'m3',
     mealName:'Barbeque Burger',
     mealDescription:'American, raw, meaty',
-    mealPrice:12.99
+    mealPrice:12.99,
+    quantity: 0
 }
   ]
 
