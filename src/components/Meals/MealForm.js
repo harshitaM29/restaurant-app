@@ -11,7 +11,6 @@ const MealForm = (props) => {
         e.preventDefault();
          const count = document.getElementById( "amount" + props.id).value; 
          q += Number(count);
-        //  console.log("q",q)
         cartContext.addItem({...props.items},q)
     }
     return (

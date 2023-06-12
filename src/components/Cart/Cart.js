@@ -13,19 +13,14 @@ const Cart = props => {
     const addCartHandler = (item) => {
         const index = cartItemCtx.items.findIndex(ct => ct.id === item.id);
        if(index !== -1) {
-        console.log(item.quantity);
         const newQ = Number(item.quantity) + 1;
-        console.log(newQ);
-       // let quantity = 1;
-        //let price = item.price + item.price;
         cartItemCtx.addItem({...item,quantity:newQ})
        }
-        
-
     }
     const removeCartHandler = (id) => {
         cartItemCtx.removeItem(id)
     }
+    
     const cartItems = <ul className={classes['cart-items']}>{
       cartItemCtx.items.map((item) => 
      
@@ -38,7 +33,6 @@ const Cart = props => {
       cartItemCtx.items.forEach(item => {
         const sum = Number(item.quantity) * Number(item.price)
         totalAmount = totalAmount + sum ;
-        // console.log(totalAmount)
         
     });
       
